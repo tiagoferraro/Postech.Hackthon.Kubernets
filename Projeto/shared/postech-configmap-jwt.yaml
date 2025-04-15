@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: jwt-settings-config
+  labels:
+    app: jwt-settings
+data:
+  JwtSettings__SecretKey: "sua_chave_secreta_muito_segura_com_pelo_menos_32_caracteres"
+  JwtSettings__Audience: "Postech.Hackathon.Clients"
+  JwtSettings__ExpirationInMinutes: "60"
+  JwtSettings__RefreshTokenExpirationInDays: "7" 
+  JwtSettings__Issuer: "Postech.Hackathon.GestorCadastro"

@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: database-shared-config-agendamento
+  labels:
+    app: shared-config-agendamento
+data:
+  ConnectionStrings__DefaultConnection: "Server=154.38.172.208,52440;Database=AgendamentoDB;User Id=sa;Password=Fiap2828$;TrustServerCertificate=True;"

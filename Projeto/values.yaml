@@ -1,0 +1,8 @@
+prometheus-node-exporter:
+  enabled: false  # Desabilita o node-exporter
+
+grafana:
+  adminPassword: admin
+
+kubeStateMetrics:
+  enabled: true
